@@ -6,6 +6,9 @@ import { applyNumber } from '../actions/index'
 import { changeOperation } from '../actions/index'
 import { clearDisplay } from '../actions/index'
 
+// Import Memory Action Creators
+import { memoryClear } from '../actions/index'
+
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 
@@ -29,6 +32,10 @@ function App() {
     dispatch(clearDisplay())  
   }
 
+  const handleMemoryClear = () => {
+    dispatch(memoryClear())
+  }
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -48,7 +55,7 @@ function App() {
             <div className="row">
               <CalcButton value={"M+"}/>
               <CalcButton value={"MR"}/>
-              <CalcButton value={"MC"}/>
+              <CalcButton onClick={handleMemoryClear} value={"MC"}/>
             </div>
 
             <div className="row">
