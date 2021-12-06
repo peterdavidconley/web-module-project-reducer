@@ -48,6 +48,18 @@ const reducer = (state, action) => {
                 ...state,
                 memory: 0,
             });
+
+            case(MEMORY_PLUS):
+            return ({
+                ...state,
+                memory: state.total,
+            });
+
+            case(MEMORY_R):
+            return ({
+                ...state,
+                memory: state.memory + state.total,
+            });
             
         default:
             return state;

@@ -8,6 +8,8 @@ import { clearDisplay } from '../actions/index'
 
 // Import Memory Action Creators
 import { memoryClear } from '../actions/index'
+import { memoryPlus } from '../actions/index'
+import { memoryR } from '../actions/index'
 
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
@@ -36,6 +38,14 @@ function App() {
     dispatch(memoryClear())
   }
 
+  const handleMemoryPlus = () => {
+    dispatch(memoryPlus())
+  }
+
+  const handleMemoryR = () => {
+    dispatch(memoryR())
+  }
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -53,8 +63,8 @@ function App() {
             </div>
             
             <div className="row">
-              <CalcButton value={"M+"}/>
-              <CalcButton value={"MR"}/>
+              <CalcButton onClick={handleMemoryPlus} value={"M+"}/>
+              <CalcButton onClick={handleMemoryR} value={"MR"}/>
               <CalcButton onClick={handleMemoryClear} value={"MC"}/>
             </div>
 

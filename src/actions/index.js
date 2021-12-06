@@ -26,8 +26,15 @@ export const clearDisplay = () => {
 
 // Memory Plus Action Creator
 
+export const memoryPlus = () => {
+    return ({type: MEMORY_PLUS})
+}
 
 // Memory R Action Creator
+
+export const memoryR = () => {
+    return ({type: MEMORY_R})
+}
 
 
 // Memory Clear Action Creator
