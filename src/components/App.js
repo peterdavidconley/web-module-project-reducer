@@ -11,8 +11,12 @@ function App() {
 
   const [ state, dispatch ] = useReducer(reducer, initialState);
 
-  const handleOneClick = () => {
-    dispatch(addOne())
+  // const handleOneClick = () => {
+  //   dispatch(addOne())
+  // }
+
+  const handleNumber = num => {
+    dispatch(applyNumber(num))
   }
 
   return (
@@ -38,7 +42,7 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton onClick={handleOneClick} value={1}/>
+              <CalcButton onClick={() => { handleNumber(1)} } value={1}/>
               <CalcButton value={2}/>
               <CalcButton value={3}/>
             </div>
