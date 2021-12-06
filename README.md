@@ -41,7 +41,7 @@ This simplified calculator adds the entire number selected, rather then adds dig
 * [x] Replace "0" with a reference to `state.memory` within the memory element.
 * [x] Replace "0" with a reference to `state.total` when passing a value to our TotalDisplay component.
 * [x] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
-* [ ] **Test** that you are connected to state by changing the initialState value in your reducer to:
+* [x] **Test** that you are connected to state by changing the initialState value in your reducer to:
 ```
 export const initialState = {
     total: 0,
@@ -49,12 +49,12 @@ export const initialState = {
     memory: 0
 }
 ```
-* [ ] Check to see that your display correctly reflects the change to your state.
+* [x] Check to see that your display correctly reflects the change to your state.
 
 #### Connect a premade action.
 > *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
-* [ ] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
-* [ ] Import the `addOne` action creator into App.js.
+* [x] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
+* [x] Import the `addOne` action creator into App.js.
 * [ ] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
 * [ ] Within your event handler, dispatch the `addOne` action creator.
 * [ ] **Test** that your event is correctly connected by pushing the 1 button in the browser. Your total should increase by 1.
