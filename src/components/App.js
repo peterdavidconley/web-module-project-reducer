@@ -65,9 +65,9 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton onClick={() => { handleNumber('+')} } value={"+"}/>
-              <CalcButton onClick={() => { handleNumber('*')} } value={"*"}/>
-              <CalcButton onClick={() => { handleNumber('-')} } value={"-"}/>
+              <CalcButton onClick={() => { handleOperation('+')} } value={"+"}/>
+              <CalcButton onClick={() => { handleOperation('*')} } value={"*"}/>
+              <CalcButton onClick={() => { handleOperation('-')} } value={"-"}/>
             </div>
 
             <div className="row ce_button">
