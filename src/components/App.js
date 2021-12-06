@@ -4,6 +4,7 @@ import './App.css';
 import { addOne } from '../actions/index'
 import { applyNumber } from '../actions/index'
 import { changeOperation } from '../actions/index'
+import { clearDisplay } from '../actions/index'
 
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
